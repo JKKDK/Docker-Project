@@ -1,4 +1,4 @@
-* Install Docker in Amazon-Linux
+* Install Docker in AWS Linux 2
 * Update OS packages
 ```
 sudo yum update -y
@@ -11,11 +11,11 @@ sudo amazon-linux-extras install docker
 ```
 sudo service docker start
 ```
-*Enable it
+* Enable it
 ```
 sudo systemctl enable docker
 ```
-*Add user to docker group
+* Add user to docker group
 ```
 sudo usermod -a -G docker ec2-user
 ```
