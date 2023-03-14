@@ -1,4 +1,9 @@
-* Install Docker in AWS Linux 2
+### Docker Installation Steps in Amazon Linux
+* For reference,
+```
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html#create-container-image-install-docker
+```
+### Install Docker in AWS Linux 2
 * Update OS packages
 ```
 sudo yum update -y
