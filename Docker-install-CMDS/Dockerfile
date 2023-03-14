@@ -26,8 +26,8 @@ COPY qi usr/share/nginx/html
 ADD https://raw.githubusercontent.com/TechPrimers/jenkins-example/master/pom.xml /tmp 
 ADD apache-tomcat-9.0.73-embed.tar.gz /tmp
 
-CMD ["ping", "-c5", "google.com"]
-
+#CMD ["ping", "-c5", "google.com"]
+ENTRYPOINT ["ping", "-c5", "google.com"]
 
 
 
