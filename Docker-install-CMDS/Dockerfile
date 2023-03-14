@@ -2,7 +2,7 @@ FROM almalinux:latest
 
 EXPOSE 8080/tcp
 
-RUN yum update && \
+RUN yum update -y && \
     yum install nginx -y  && \
     yum install git -y
 
