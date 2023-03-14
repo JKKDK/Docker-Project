@@ -8,7 +8,7 @@ RUN yum update -y && \
 
 #  To reduce the number of layers and keep the image size small.
 
-CMD ["nginx", "-g", "daemon off;"]
+# CMD ["nginx", "-g", "daemon off;"]
 
 # to run the main process in the foreground to ensure that the container remains active and responsive
 
@@ -22,3 +22,13 @@ ENV AUTHOR="SHIVAKUMAR"\
 
 RUN rm -rf usr/share/nginx/html/index.html
 COPY qi usr/share/nginx/html
+
+ADD https://raw.githubusercontent.com/TechPrimers/jenkins-example/master/pom.xml /tmp 
+ADD apache-tomcat-9.0.73-embed.tar.gz /tmp
+
+CMD ["ping", "-c5", "google.com"]
+
+
+
+
+
